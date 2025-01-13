@@ -1,0 +1,3 @@
+4,1004,Fridge,899.99,Big fridge,200,50,300,Large
+2,1002,Laptop,1299.99,Gaming laptop,45,Fragile
+1,1001,RTX5090,2999.99,Fast video card
