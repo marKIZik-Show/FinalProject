@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
-#include <algorithm>
+
 using namespace std;
 
 
@@ -180,8 +180,15 @@ namespace Manager {
 		}
 
 		void sortByPrice() {
-			sort(products.begin(), products.end(),
-				[](Products::Product* a, Products::Product* b) { return a->getPrice() < b->getPrice(); });
+			for (int i = 0; i < products.size(); ++i) {
+				for (int j = 0; j < products.size() - i - 1; ++j) {
+					if (products[j]->getPrice() > products[j + 1]->getPrice()) {
+						Products::Product* temp = products[j];
+						products[j] = products[j + 1];
+						products[j + 1] = temp;
+					}
+				}
+			}
 			cout << "Products sorted by price." << endl;
 		}
 
