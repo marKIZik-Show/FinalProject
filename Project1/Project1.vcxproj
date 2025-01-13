@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Exeptions.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Product.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exeptions.h" />
+    <ClInclude Include="Manager.h" />
     <ClInclude Include="Product.h" />
   </ItemGroup>
   <ItemGroup>
